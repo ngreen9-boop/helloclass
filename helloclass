@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Mrs. Smith's 2nd Grade Safari Class!</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration for theme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'safari-sand': '#fef3c7', // Light Yellow/Sand
+                        'jungle-green': '#16a34a', // Dark Green
+                        'accent-gold': '#f59e0b', // Amber/Gold
+                        'deep-brown': '#713f12', // Darker Brown
+                    },
+                    fontFamily: {
+                        // Use Inter as a friendly, legible default font
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Ensuring the body uses the custom font and colors */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom shadows for a "pop" effect */
+        .safari-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(22, 163, 74, 0.7); /* Jungle Green Shadow */
+        }
+        /* Custom header gradient */
+        .safari-header {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-safari-sand min-h-screen p-4 sm:p-8">
+
+    <!-- Header Section (Jungle Banner) -->
+    <header class="safari-header p-6 sm:p-10 rounded-3xl border-4 border-jungle-green mb-10 shadow-xl">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-jungle-green leading-tight">
+                Welcome to the 2nd Grade Safari! 🦒
+            </h1>
+            <p class="text-xl sm:text-3xl mt-2 font-bold text-deep-brown">
+                Mrs. Smith's Wildly Wonderful Class!
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- 1. About Mrs. Smith Card -->
+        <div class="lg:col-span-2 bg-white p-6 sm:p-8 rounded-2xl border-4 border-accent-gold safari-shadow transition duration-300 hover:scale-[1.01]">
+            <h2 class="text-3xl sm:text-4xl font-black text-jungle-green mb-4 flex items-center">
+                🦁 About Mrs. Smith: Our Safari Guide
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <!-- Mrs. Smith Image Placeholder (Styled to fit theme) -->
+                <div class="w-full sm:w-1/3 flex-shrink-0">
+                    <!-- Image Placeholder for a friendly photo -->
+                    <img src="https://placehold.co/300x300/f59e0b/ffffff?text=Mrs.+Smith" 
+                         alt="Placeholder image for Mrs. Smith" 
+                         class="rounded-xl border-4 border-jungle-green w-full h-auto object-cover">
+                </div>
+                <!-- Bio Text -->
+                <div class="text-lg text-deep-brown sm:w-2/3 space-y-4">
+                    <p>
+                        Hello Explorers and Families! I'm so excited to be your guide this year on our 2nd-grade learning safari. We're going to explore amazing new subjects, meet incredible characters in our books, and learn how to be thoughtful, kind classmates.
+                    </p>
+                    <p>
+                        I love reading adventure stories, spending time outside, and, most importantly, helping young learners grow their confidence. My goal is to make every student feel safe, challenged, and excited to come to school every single day. Let's make this year an adventure!
+                    </p>
+                    <p class="font-semibold">
+                        Reach me anytime at: <a href="mailto:mrs.smith@school.edu" class="text-jungle-green hover:underline">mrs.smith@school.edu</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Our Class Schedule Card -->
+        <div class="bg-yellow-100 p-6 sm:p-8 rounded-2xl border-4 border-jungle-green safari-shadow transition duration-300 hover:scale-[1.01]">
+            <h2 class="text-3xl sm:text-4xl font-black text-deep-brown mb-4 flex items-center">
+                🌳 Our Daily Class Schedule
+            </h2>
+            <p class="text-md text-deep-brown mb-4 italic">A rough map for our daily journey:</p>
+            <ul class="space-y-3 text-lg text-green-800 font-semibold">
+                <!-- Schedule Items -->
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">8:00 - 8:30:</span> Morning Meeting & Start of the Day
+                </li>
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">8:30 - 10:00:</span> ELA/Reading Adventure
+                </li>
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">10:00 - 11:00:</span> Math Explorations
+                </li>
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">11:00 - 11:30:</span> Lunch & Recess Fun
+                </li>
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">11:30 - 12:30:</span> Specials (Art, Gym, Music)
+                </li>
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">12:30 - 1:30:</span> Science/Social Studies
+                </li>
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">1:30 - 2:00:</span> Independent Reading
+                </li>
+                <li class="bg-accent-gold/30 p-2 rounded-lg">
+                    <span class="font-extrabold text-deep-brown">2:00:</span> Dismissal Time!
+                </li>
+            </ul>
+        </div>
+        
+        <!-- 3. Fun Links Card (Full width on mobile, separate on desktop) -->
+        <div class="lg:col-span-3 bg-white p-6 sm:p-8 rounded-2xl border-4 border-jungle-green safari-shadow transition duration-300 hover:scale-[1.01]">
+            <h2 class="text-3xl sm:text-4xl font-black text-accent-gold mb-6 flex items-center">
+                🐾 Fun Links for Our Little Explorers
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                
+                <!-- Link 1 -->
+                <a href="#" class="block bg-jungle-green text-white p-4 rounded-xl text-center font-bold text-xl hover:bg-jungle-green/90 transition duration-150 transform hover:scale-105">
+                    <span class="text-3xl block mb-1">📚</span> Reading Games
+                </a>
+                
+                <!-- Link 2 -->
+                <a href="#" class="block bg-jungle-green text-white p-4 rounded-xl text-center font-bold text-xl hover:bg-jungle-green/90 transition duration-150 transform hover:scale-105">
+                    <span class="text-3xl block mb-1">🧮</span> Math Practice
+                </a>
+                
+                <!-- Link 3 -->
+                <a href="#" class="block bg-jungle-green text-white p-4 rounded-xl text-center font-bold text-xl hover:bg-jungle-green/90 transition duration-150 transform hover:scale-105">
+                    <span class="text-3xl block mb-1">🦖</span> Science Videos
+                </a>
+
+                <!-- Link 4 -->
+                <a href="#" class="block bg-jungle-green text-white p-4 rounded-xl text-center font-bold text-xl hover:bg-jungle-green/90 transition duration-150 transform hover:scale-105">
+                    <span class="text-3xl block mb-1">🗺️</span> World Explorers
+                </a>
+
+            </div>
+            <p class="text-sm italic text-center mt-6 text-deep-brown">
+                (Note: Please replace the '#' links with the actual website URLs for the best experience!)
+            </p>
+        </div>
+
+    </main>
+    
+    <!-- Footer -->
+    <footer class="mt-12 text-center text-deep-brown text-md border-t border-accent-gold pt-4">
+        &copy; 2024 Mrs. Smith's 2nd Grade Class | Let the Adventure Begin! 🌟
+    </footer>
+
+</body>
+</html>
